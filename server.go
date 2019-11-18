@@ -35,7 +35,6 @@ type WSStreamHandler struct {
 	resizeEvent chan remotecommand.TerminalSize
 	rbuf        []byte
 	cond        *sync.Cond
-	ptyStdin    *os.File
 
 	sync.Mutex
 }
